@@ -1,0 +1,49 @@
+:root {
+    /* Brand Colors */
+    --brand-dark: #171A21;       /* Main dark brand color */
+    --brand-light: #F7F3E3;      /* Main light brand color */
+    
+    /* Dark Variations */
+    --dark-accent: #242832;      /* Lighter charcoal for secondary elements */
+    --dark-interactive: #2F3542;  /* Muted charcoal for interactive elements */
+    
+    /* Light Variations */
+    --light-muted: rgba(247, 243, 227, 0.5);      /* Muted warm white for secondary elements */
+    --light-border: #D4D0C2;     /* Subtle warm tone for borders */
+    --light-accent: #BFBBB0;     /* Most muted warm tone for accents */
+    
+    /* Background Colors */
+    --bg-darker: #13151A;        /* Darkest background option */
+    --bg-lighter: #FDFBF6;       /* Lightest background option */
+
+    /* Typography Scale */
+    --font-size-xs: 0.75rem;     /* 12px */
+    --font-size-sm: 0.875rem;    /* 14px */
+    --font-size-base: 1rem;      /* 16px */
+    --font-size-lg: 1.125rem;    /* 18px */
+    --font-size-xl: 1.25rem;     /* 20px */
+    --font-size-2xl: 1.5rem;     /* 24px */
+    --font-size-3xl: 1.875rem;   /* 30px */
+    --font-size-4xl: 2.25rem;    /* 36px */
+    
+    /* Font Families */
+    --font-family-sans: 'SSans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-family-display: 'SMix', var(--font-family-sans);
+    --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Line Heights */
+    --line-height-tight: 1.2;    /* Headings */
+    --line-height-normal: 1.5;   /* Body text */
+    --line-height-relaxed: 1.75; /* Long-form content */
+    
+    /* Letter Spacing */
+    --letter-spacing-tight: -0.025em;
+    --letter-spacing-normal: 0em;
+    --letter-spacing-wide: 0.025em;
+}
