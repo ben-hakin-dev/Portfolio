@@ -19,7 +19,7 @@
                 font-weight: 400;
                 letter-spacing: -1px;
                 span {
-                    /* font-family: var(--font-family-sans); */
+                    font-family: var(--font-family-sans);
                     font-weight: 400;
                     letter-spacing: -1px;
                 }
@@ -27,7 +27,7 @@
         }
         & .hero-subheading {
             font-family: var(--font-family-sans);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 400;
             color: var(--light-muted);
             text-align: left;
