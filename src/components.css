@@ -17,12 +17,12 @@
 }
 
 .button-primary {
-    background-color: var(--brand-dark);
-    color: var(--brand-light);
-}
-
-.button-primary:hover {
-    background-color: var(--dark-accent);
+    background-color: var(--brand-light);
+    color: var(--brand-dark);
+    &:hover {
+        background-color: var(--dark-accent);
+        color: var(--brand-light);
+    }
 }
 
 .button-outline {
