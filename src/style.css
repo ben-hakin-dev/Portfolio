@@ -133,7 +133,64 @@
    } 
 }
 
+.mini-bio-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    & p {
+        font-family: var(--font-family-display);
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: -1px;
+        color: var(--brand-light);
+    }
+}
 
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 70vh;
+    & .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        & .footer-title {
+            font-family: var(--font-family-display);
+            font-size: 3.5rem;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: -1px;
+            text-align: center;
+            color: var(--brand-light);
+        }
+    }
+     & .copyright-content {
+        position: absolute;
+        bottom: 32px;
+        left: 16px;
+        right: 16px;
+        height: auto;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .footer-brand-logo {
+            width: 32px;
+            height: auto;
+        }
+        & .copyright-text {
+            font-family: var(--font-family-sans);
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: -.5px;
+            color: var(--brand-light);
+     }
+}
 
 
 & .section-title {
