@@ -3,30 +3,47 @@
     align-items: flex-start;
     height: auto;
     color: var(--brand-light);
-
+    @media only screen and (min-width: 1024px) {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
     & .hero-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
-
+        @media only screen and (min-width: 1024px) {
+            align-items: center;
+        }
         & .brand-logo {
             width: 60px;
+            @media only screen and (min-width: 1024px) {
+                width: 100px;
+            }
         }
 
         & .hero-heading-wrap {
             text-align: left;
-
+            @media only screen and (min-width: 1024px) {
+                text-align: center;
+            }
             & h1 {
                 font-family: var(--font-family-display);
-                font-size: 2.3rem;
+                font-size: 2.2rem;
                 font-weight: 400;
                 letter-spacing: -1px;
-
+                @media only screen and (min-width: 1024px) { 
+                    font-size: 5.2rem;
+                    line-height: 80%;
+                }
                 span {
                     font-family: var(--font-family-sans);
-                    font-weight: 400;
+                    font-weight: 500;
                     letter-spacing: -1px;
+                    @media only screen and (min-width: 1024px) { 
+                        font-size: 2.2rem;
+                    }
                 }
             }
         }
@@ -37,6 +54,13 @@
             font-weight: 400;
             color: var(--light-muted);
             text-align: left;
+            @media only screen and (min-width: 1024px) {
+                text-align: center;
+                width: 70%;
+            }
+            @media only screen and (min-width: 1280px) { 
+                width: 50%;
+            }
         }
     }
 }
@@ -46,7 +70,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
-
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+        gap: 5rem;
+    }
     & .current-breakdown-item {
         display: flex;
         flex-direction: column;
@@ -88,7 +115,7 @@
 
             & .project-title {
                 font-family: var(--font-family-display);
-                font-size: 2rem;
+                font-size: 2.2rem;
                 font-weight: 400;
                 letter-spacing: -1px;
                 color: var(--brand-light);
@@ -175,18 +202,18 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 70vh;
+    height: 100vh;
 
     & .footer-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
 
         & .footer-title {
             font-family: var(--font-family-display);
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 500;
             line-height: 100%;
             letter-spacing: -1px;
@@ -202,11 +229,12 @@
         right: 16px;
         height: auto;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
-
+        gap: 1rem;
         & .footer-brand-logo {
-            width: 32px;
+            width: 40px;
             height: auto;
         }
 
@@ -214,7 +242,7 @@
             font-family: var(--font-family-sans);
             font-size: 1.1rem;
             font-weight: 400;
-            letter-spacing: -.5px;
+            letter-spacing: 0px;
             color: var(--brand-light);
         }
     }
@@ -222,7 +250,7 @@
 
 .section-title {
     font-family: var(--font-family-display);
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     font-weight: 400;
     letter-spacing: -1px;
     color: var(--light-muted);
