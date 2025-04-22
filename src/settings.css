@@ -16,6 +16,17 @@
     --bg-darker: #13151A;        /* Darkest background option */
     --bg-lighter: #FDFBF6;       /* Lightest background option */
 
+    --bg: #171A21;
+    --c1: #F7F3E3;  
+    --c2: #BFBBB0;  
+    --c3: #171A21;
+
+    /* --bg: oklch(12.9% 0.042 264.695);
+  --c1: oklch(44.4% 0.177 26.899);
+  --c2: oklch(85.2% 0.199 91.936);
+  --c3: oklch(58.8% 0.158 241.966); */
+
+
     /* Typography Scale */
     --font-size-xs: 0.75rem;     /* 12px */
     --font-size-sm: 0.875rem;    /* 14px */
@@ -46,4 +57,10 @@
     --letter-spacing-tight: -0.025em;
     --letter-spacing-normal: 0em;
     --letter-spacing-wide: 0.025em;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
 }

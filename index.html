@@ -11,9 +11,16 @@
 </head>
 
 <body>
+
+    <nav class="site-nav container">
+        <img src="/images/brand/logo-primary.png" alt="Brand Logo" class="nav-logo">
+        <button class="button button-primary-sm">hello@benhakin.com</button>
+    </nav>
+    
     <main>
-        <!-- Hero Section -->
+        
         <section id="hero_section" class="hero-section">
+            <div class="orb"></div>
             <div class="container">
                 <div class="hero-content">
                     <img src="/images/brand/logo-primary.png" alt="Brand Logo" class="brand-logo">
@@ -23,32 +30,35 @@
                     <p class="hero-subheading">
                         I work with companies and individuals around the world to create high-quality interfaces, brand identities, and web experiences.
                     </p>
-                    <button class="button button-primary">Book a call</button>
+                    <button class="button button-primary">hello@benhakin.com</button>
                 </div>
+
+                <!-- Current Breakdown Section -->
+                <div class="current-breakdown-section">
+                    <div class="current-breakdown-item">
+                        <h4 class="item-heading">Currently</h4>
+                        <span class="item-value">Head of Design at <a href="https://golfscape.com" target="_blank" class="link-style"><i>golfscape</i></a></span>
+                        <span class="item-value">Building Heart&Chaos</span>
+                        <!-- <span class="item-value">Freelancing with clients worldwide</span> -->
+                    </div>
+                    <div class="current-breakdown-item">
+                        <h4 class="item-heading">Scope of work</h4>
+                        <span class="item-value">Web Design and Development</span>
+                        <!-- <span class="item-value">Web Development</span> -->
+                        <span class="item-value">Brand Identity</span>
+                    </div>
+                    <div class="current-breakdown-item">
+                        <h4 class="item-heading">Where to reach me</h4>
+                        <span class="item-value"><a href="mailto:hello@benhakin.com" class="link-style">hello@benhakin.com</a></span>
+                        <span class="item-value"><a href="https://x.com/bh_design" target="_blank" class="link-style">x.com/bh_design</a></span>
+                        <!-- <span class="item-value">LinkedIn</span> -->
+                    </div>
+                </div>
+                
             </div>
         </section>
 
-        <!-- Current Breakdown Section -->
-        <section class="current-breakdown-section container">
-            <div class="current-breakdown-item">
-                <h4 class="item-heading">Currently</h4>
-                <span class="item-value">Head of Design at golfscape</span>
-                <span class="item-value">Building Heart&Chaos</span>
-                <span class="item-value">Freelancing with clients worldwide</span>
-            </div>
-            <div class="current-breakdown-item">
-                <h4 class="item-heading">Scope of work</h4>
-                <span class="item-value">Web Design</span>
-                <span class="item-value">Web Development</span>
-                <span class="item-value">Brand Identity</span>
-            </div>
-            <div class="current-breakdown-item">
-                <h4 class="item-heading">Where to reach me</h4>
-                <span class="item-value">hello@benhakin.com</span>
-                <span class="item-value">x.com/bh_design</span>
-                <span class="item-value">LinkedIn</span>
-            </div>
-        </section>
+        
 
         <div class="section-divide container"></div>
 
@@ -91,25 +101,26 @@
                             <img src="/images/projects/clarification-img-set-2.webp" alt="Clarifications Image sm 1" class="project-image-set-item">
                         </picture>
                         <picture>
+                            <source media="(min-width: 768px)" srcset="/images/projects/clarification-img-set-6@2x.webp">
+                            <source media="(max-width: 767px)" srcset="/images/projects/clarification-img-set-6.webp">
+                            <img src="/images/projects/clarification-img-set-6.webp" alt="Clarifications Image sm 2" class="project-image-set-item">
+                        </picture>
+                        <picture>
                             <source media="(min-width: 768px)" srcset="/images/projects/clarification-img-set-3@2x.webp">
                             <source media="(max-width: 767px)" srcset="/images/projects/clarification-img-set-3.webp">
-                            <img src="/images/projects/clarification-img-set-3.webp" alt="Clarifications Image sm 2" class="project-image-set-item">
+                            <img src="/images/projects/clarification-img-set-3.webp" alt="Clarifications Image sm 4" class="project-image-set-item">
                         </picture>
                         <picture>
                             <source media="(min-width: 768px)" srcset="/images/projects/clarification-img-set-4@2x.webp">
                             <source media="(max-width: 767px)" srcset="/images/projects/clarification-img-set-4.webp">
                             <img src="/images/projects/clarification-img-set-4.webp" alt="Clarifications Image sm 3" class="project-image-set-item">
                         </picture>
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="/images/projects/clarification-img-set-5@2x.webp">
-                            <source media="(max-width: 767px)" srcset="/images/projects/clarification-img-set-5.webp">
-                            <img src="/images/projects/clarification-img-set-5.webp" alt="Clarifications Image sm 4" class="project-image-set-item">
-                        </picture>
+                        
                     </div>
                 </div>
             </div>
 
-            <div class="project-container">
+            <div class="project-container project-spacing">
                 <div class="project-information">
                     <h3 class="project-title">2. KGLkitchen</h3>
                     <!-- Project Breakdown -->
@@ -163,7 +174,7 @@
                 </div>
             </div>
 
-            <div class="project-container">
+            <div class="project-container project-spacing">
                 <div class="project-information">
                     <h3 class="project-title">3. EMS UK Ltd</h3>
                     <!-- Project Breakdown -->
@@ -221,8 +232,9 @@
 
         <section class="mini-bio-section container">
             <p>
-                Six years of end-to-end experience in branding, web design, and development.<br><br>I work with companies and individuals around the world to create high-quality interfaces, brand identities, and web experiences.<br><br>Need a standout website, a unique brand, or the full ‘brand & digital’ experience, the solution is always tailored.
+                Six years of end-to-end experience in branding, web design, and development.<br><br> I work with companies and individuals around the world to create high-quality interfaces, brand identities, and web experiences.<br><br> Need a standout website, a unique brand, or the full 'brand & digital' experience, the solution is always tailored.
             </p>
+            <img src="/images/brand/logo-primary.png" alt="Brand Logo" class="mini-bio-background-logo">
         </section>
 
     </main>
