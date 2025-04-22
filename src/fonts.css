@@ -1,4 +1,3 @@
-/* SSans Font Family */
 @font-face {
     font-family: 'SSans';
     src: url('/fonts/SSans-Regular.woff2') format('woff2'),
@@ -35,7 +34,6 @@
     font-display: swap;
 }
 
-/* SMix Font Family */
 @font-face {
     font-family: 'SMix';
     src: url('/fonts/SMix-Regular.woff2') format('woff2'),
