@@ -14,11 +14,11 @@
 }
 
 .button-primary {
-    background-color: var(--brand-light);
-    color: var(--brand-dark);
+    background-color: var(--dark-accent);
+    color: var(--brand-light);
     &:hover {
-        background-color: var(--dark-accent);
-        color: var(--brand-light);
+        background-color: var(--brand-light);
+        color: var(--brand-dark);
     }
 }
 

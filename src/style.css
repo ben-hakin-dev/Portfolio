@@ -71,8 +71,7 @@
         width: 100%;
         @media only screen and (min-width: 1024px) {
             flex-direction: row;
-            gap: 5rem;
-            justify-content: flex-end;
+            gap: 8rem;
         }
         & .current-breakdown-item {
             display: flex;
@@ -332,9 +331,6 @@
     width: auto;
 }
 
-
-
-
 .orb {
     display: grid;
     grid-template-areas: "stack";
@@ -351,9 +347,10 @@
     opacity: .5;
     @media only screen and (min-width: 900px) {
         inline-size: min(80vmin, 100%);
-        top: 10%;
+        top: 40%;
         left: 90%;
-        filter: blur(4px);
+        filter: blur(8px);
+        opacity: .6;
     }
     &::before,
     &::after {
