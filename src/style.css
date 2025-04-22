@@ -3,9 +3,12 @@
     align-items: flex-start;
     height: 100vh;
     color: var(--brand-light);
-    padding-top: 0;
+    padding: 2rem 0;
     position: relative;
     overflow: hidden;
+    @media only screen and (min-width: 1024px) {
+        padding: 4rem 0;
+    }
     .container {
         height: 100%;
         display: flex;
@@ -27,7 +30,7 @@
                 text-align: left;
                 & h1 {
                     font-family: var(--font-family-display);
-                    font-size: 2rem;
+                    font-size: 1.9rem;
                     font-weight: 400;
                     letter-spacing: -1px;
                     @media only screen and (min-width: 1024px) { 
@@ -46,12 +49,13 @@
     
             & .hero-subheading {
                 font-family: var(--font-family-sans);
-                font-size: 1.1rem;
+                font-size: 0.9rem;
                 font-weight: 400;
                 color: var(--light-muted);
                 text-align: left;
                 @media only screen and (min-width: 1024px) {
                     width: 70%;
+                    font-size: 1rem;
                 }
                 @media only screen and (min-width: 1280px) { 
                     width: 50%;
@@ -216,6 +220,7 @@
         width: 500px;
         height: auto;
         opacity: 0.05;
+        display: none;
     }
 }
 
@@ -276,7 +281,7 @@
 
 .section-title {
     font-family: var(--font-family-display);
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 400;
     letter-spacing: -1px;
     color: var(--light-muted);
@@ -327,9 +332,7 @@
     width: auto;
 }
 
-main {
-    padding-top: 50px;
-}
+
 
 
 .orb {
@@ -347,8 +350,9 @@ main {
     filter: blur(5px);
     opacity: .5;
     @media only screen and (min-width: 900px) {
-        inline-size: min(40vmin, 100%);
-        left: 50%;
+        inline-size: min(80vmin, 100%);
+        top: 10%;
+        left: 90%;
         filter: blur(4px);
     }
     &::before,
