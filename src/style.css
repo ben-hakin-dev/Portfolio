@@ -191,7 +191,7 @@
 
 .mini-bio-section {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     height: 100vh;
     position: relative;
@@ -228,26 +228,29 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh;
-
+    height: auto;
+    padding-bottom: 170px;
     & .footer-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         gap: 2rem;
-
+        @media only screen and (min-width: 1024px) {
+            align-items: center;
+        }
         & .footer-title {
             font-family: var(--font-family-display);
             font-size: 3.5rem;
             font-weight: 400;
-            line-height: 100%;
+            line-height: 110%;
             letter-spacing: -1px;
-            text-align: center;
+            text-align: left;
             color: var(--brand-light);
             @media only screen and (min-width: 1024px) {
-                font-size: 4.5rem;
+                font-size: 6rem;
                 line-height: 120%;
+                text-align: center;
             }
         }
     }
@@ -260,9 +263,12 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 1rem;
+        @media only screen and (min-width: 1024px) { 
+            align-items: center;
+        }
         & .footer-brand-logo {
             width: 40px;
             height: auto;
