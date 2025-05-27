@@ -17,7 +17,7 @@
         & .hero-content {
             display: flex;
             flex-direction: column;
-            align-items: left;
+            align-items: flex-start;
             @media only screen and (min-width: 1024px) {
                 align-items: center;
             }
@@ -219,24 +219,14 @@
         letter-spacing: -1px;
         color: var(--brand-light);
         z-index: 1;
+        text-align: center;
         @media only screen and (min-width: 900px) {
-            text-align: center;
             font-size: 3rem;
             line-height: 130%;
             & > br {
                 display: none;
             }
         }
-    }
-    & .mini-bio-background-logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 500px;
-        height: auto;
-        opacity: 0.05;
-        display: none;
     }
 }
 
@@ -250,25 +240,21 @@
     & .footer-content {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         gap: 2rem;
-        @media only screen and (min-width: 1024px) {
-            align-items: center;
-        }
         & .footer-title {
             font-family: var(--font-family-display);
-            font-size: 3.5rem;
+            font-size: 2.9rem;
             font-weight: 400;
             line-height: 110%;
             letter-spacing: -1px;
-            text-align: left;
+            text-align: center;
             color: var(--brand-light);
             opacity: .1;
             @media only screen and (min-width: 1024px) {
                 font-size: 4.5rem;
                 line-height: 120%;
-                text-align: center;
             }
         }
     }
@@ -281,12 +267,9 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         gap: 1rem;
-        @media only screen and (min-width: 1024px) { 
-            align-items: center;
-        }
         & .footer-brand-logo {
             width: 40px;
             height: auto;
