@@ -17,7 +17,10 @@
         & .hero-content {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: left;
+            @media only screen and (min-width: 1024px) {
+                align-items: center;
+            }
             gap: 1rem;
             & .brand-logo {
                 width: 50px;
@@ -28,21 +31,29 @@
     
             & .hero-heading-wrap {
                 text-align: left;
+                @media only screen and (min-width: 1024px) { 
+                    text-align: center;
+                }
                 & h1 {
                     font-family: var(--font-family-display);
                     font-size: 1.9rem;
                     font-weight: 400;
                     letter-spacing: -1px;
                     @media only screen and (min-width: 1024px) { 
-                        font-size: 2.75rem;
+                        font-size: 4.5rem;
                         line-height: 100%;
+                        
                     }
                     span {
                         font-weight: 400;
                         letter-spacing: -1px;
+                        color: var(--light-muted);
                         @media only screen and (min-width: 1024px) { 
-                            font-size: 2rem;
+                            font-size: 4.5rem;
                         }
+                    }
+                    br {
+                        @media only screen and (min-width: 1024px) { display: none; }
                     }
                 }
             }
@@ -51,11 +62,12 @@
                 font-family: var(--font-family-sans);
                 font-size: 0.9rem;
                 font-weight: 400;
-                color: var(--light-muted);
+                color: var(--brand-light);
                 text-align: left;
                 @media only screen and (min-width: 1024px) {
                     width: 70%;
                     font-size: 1rem;
+                    text-align: center;
                 }
                 @media only screen and (min-width: 1280px) { 
                     width: 50%;
@@ -71,6 +83,7 @@
         width: 100%;
         @media only screen and (min-width: 1024px) {
             flex-direction: row;
+            justify-content: center;
             gap: 8rem;
         }
         & .current-breakdown-item {
@@ -80,7 +93,11 @@
             gap: 0.25rem;
             font-size: .9rem;
             font-weight: 400;
-    
+            text-align: center;
+            @media only screen and (min-width: 1024px) {
+                text-align: center;
+                align-items: center;
+            }
             & .item-heading {
                 font-family: var(--font-family-sans);
                 color: var(--light-muted);
@@ -247,8 +264,9 @@
             letter-spacing: -1px;
             text-align: left;
             color: var(--brand-light);
+            opacity: .1;
             @media only screen and (min-width: 1024px) {
-                font-size: 6rem;
+                font-size: 4.5rem;
                 line-height: 120%;
                 text-align: center;
             }
