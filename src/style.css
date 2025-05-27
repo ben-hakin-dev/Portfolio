@@ -60,13 +60,12 @@
     
             & .hero-subheading {
                 font-family: var(--font-family-sans);
-                font-size: 0.9rem;
+                font-size: 1rem;
                 font-weight: 400;
                 color: var(--brand-light);
                 text-align: left;
                 @media only screen and (min-width: 1024px) {
                     width: 70%;
-                    font-size: 1rem;
                     text-align: center;
                 }
                 @media only screen and (min-width: 1280px) { 
