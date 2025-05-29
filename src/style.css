@@ -39,14 +39,17 @@
                     font-size: 1.9rem;
                     font-weight: 400;
                     letter-spacing: -1px;
+                    font-style: italic;
                     @media only screen and (min-width: 1024px) { 
                         font-size: 4.5rem;
                         line-height: 100%;
                         
                     }
                     span {
+                        
                         font-weight: 400;
-                        letter-spacing: -1px;
+                        font-style: normal;
+                        letter-spacing: -2px;
                         color: var(--light-muted);
                         @media only screen and (min-width: 1024px) { 
                             font-size: 4.5rem;
@@ -117,7 +120,7 @@
     align-items: flex-start;
     & .project-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
         gap: 1rem;
         width: 100%;
@@ -286,12 +289,13 @@
 
 .section-title {
     font-family: var(--font-family-display);
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: -1px;
     color: var(--light-muted);
     @media only screen and (min-width: 1024px) {
-        font-size: 2.75rem;
+        font-size: 4.75rem;
+        text-align: center;
     }
 }
 
@@ -332,10 +336,27 @@
     visibility: visible;
 }
 
-.nav-logo {
-    height: 40px;
-    width: auto;
+.logo-wrapper { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    & .nav-logo {
+        height: 40px;
+        width: auto;
+    }
+    & .nav-logo-text {
+        font-family: var(--font-family-display);
+        font-size: 1.1rem;
+        font-weight: 400;
+        letter-spacing: -.5px;
+        color: var(--brand-light);
+        & .logo-multi {
+            font-style: italic;
+        }
+    }
 }
+
 
 .orb {
     display: grid;
