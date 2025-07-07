@@ -1,70 +1,38 @@
 @font-face {
-    font-family: 'SSans';
-    src: url('/fonts/SSans-Regular.woff2') format('woff2'),
-         url('/fonts/SSans-Regular.woff') format('woff');
+    font-family: 'SuisseIntl';
+    src: url('/fonts/SuisseIntl-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url('/fonts/SuisseIntl-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'SSans';
-    src: url('/fonts/SSans-Medium.woff2') format('woff2'),
-         url('/fonts/SSans-Medium.woff') format('woff');
+    font-family: 'SuisseIntl';
+    src: url('/fonts/Suisse Int\'l Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'SSans';
-    src: url('/fonts/SSans-SemiBold.woff2') format('woff2'),
-         url('/fonts/SSans-SemiBold.woff') format('woff');
+    font-family: 'SuisseIntl';
+    src: url('/fonts/SuisseIntl-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'SSans';
-    src: url('/fonts/SSans-Bold.woff2') format('woff2'),
-         url('/fonts/SSans-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SMix';
-    src: url('/fonts/SMix-Regular.woff2') format('woff2'),
-         url('/fonts/SMix-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SMix';
-    src: url('/fonts/SMix-Medium.woff2') format('woff2'),
-         url('/fonts/SMix-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SMix';
-    src: url('/fonts/SMix-SemiBold.woff2') format('woff2'),
-         url('/fonts/SMix-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SMix';
-    src: url('/fonts/SMix-Bold.woff2') format('woff2'),
-         url('/fonts/SMix-Bold.woff') format('woff');
+    font-family: 'SuisseIntl';
+    src: url('/fonts/SuisseIntl-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;

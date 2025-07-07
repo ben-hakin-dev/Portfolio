@@ -19,8 +19,8 @@ body {
     font-family: var(--font-family-sans);
     font-display: swap;
     font-size: var(--font-size-base);
-    color: var(--brand-dark);
-    background-color: var(--brand-dark);
+    color: var(--brand-secondary);
+    background-color: var(--brand-primary);
 }
 
 img,
@@ -76,7 +76,7 @@ body {
 }
 
 :focus-visible {
-    outline: 2px solid var(--brand-dark);
+    outline: 2px solid var(--brand-secondary);
     outline-offset: 2px;
 }
 

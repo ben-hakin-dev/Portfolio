@@ -1,5 +1,4 @@
 .button {
-    font-family: var(--font-family-sans);
     font-size: 1rem;
     display: inline-flex;
     align-items: center;
@@ -14,32 +13,52 @@
 }
 
 .button-primary {
-    background-color: var(--dark-accent);
-    color: var(--brand-light);
-    &:hover {
-        background-color: var(--brand-light);
-        color: var(--brand-dark);
+    background-color: var(--brand-secondary);
+    color: var(--brand-primary);
+    border: 1px var(--brand-secondary) solid;
+}
+
+/* Hover effect only for devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+    .button-primary:hover {
+        background-color: var(--brand-primary);
+        color: var(--brand-secondary);
     }
+}
+
+/* Active state for touch devices */
+.button-primary:active {
+    filter: brightness(0.95);
 }
 
 .button-primary-sm {
-    background-color: var(--brand-light);
-    color: var(--brand-dark);
+    background-color: var(--brand-secondary);
+    color: var(--brand-primary);
+    border: 1px var(--brand-secondary) solid;
     font-size: 0.9rem;
-    &:hover {
-        background-color: var(--dark-accent);
-        color: var(--brand-light);
+}
+
+/* Hover effect only for devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+    .button-primary-sm:hover {
+        background-color: var(--brand-primary);
+        color: var(--brand-secondary);
     }
 }
 
+/* Active state for touch devices */
+.button-primary-sm:active {
+    filter: brightness(0.95);
+}
+
 .button-outline {
-    border: 2px solid var(--brand-dark);
-    color: var(--brand-dark);
+    border: 2px solid var(--brand-secondary);
+    color: var(--brand-secondary);
 }
 
 .button-outline:hover {
-    background-color: var(--brand-dark);
-    color: var(--brand-light);
+    background-color: var(--brand-secondary);
+    color: var(--brand-primary);
 }
 
 .section-header {
@@ -48,8 +67,7 @@
 }
 
 .section-title {
-    font-family: var(--font-family-display);
-    font-size: var(--font-size-3xl);
+    font-size: 35px;
     font-weight: var(--font-weight-bold);
     color: var(--brand-dark);
     margin-bottom: 1rem;
@@ -64,11 +82,11 @@
 }
 
 .link-style {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: 500;
-    transition: all 0.1s ease;
+    /* transition: all 0.1s ease; */
     &:hover {
-        text-decoration: none;
+        /* text-decoration: none; */
         opacity: .5;
     }
 }

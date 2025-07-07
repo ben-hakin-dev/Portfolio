@@ -17,19 +17,15 @@ function isInViewport(element) {
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('.site-nav');
   const heroContent = document.querySelector('.hero-content');
-  const footerContent = document.querySelector('.footer-content');
-  const orb = document.querySelector('.orb');
+  const footerContent = document.querySelector('.site-footer');
+  const fadeInElements = document.querySelectorAll('.fade-in');
+  
 
-  const updateParallax = () => {
-    if (!orb) return;
-
-    const scrollY = window.scrollY;
-
-    if (isInViewport(orb)) {
-      const parallaxOffset = scrollY * -0.1;
-      orb.style.transform = `translate(-50%, calc(-50% + ${parallaxOffset}px))`;
-    }
-  };
+  setTimeout(() => {
+    fadeInElements.forEach(el => {
+      el.classList.add('visible');
+    });
+  }, 0);
 
   if (nav && heroContent && footerContent) {
     const handleScroll = () => {
@@ -63,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (!nav) console.error('Element .site-nav not found.');
     if (!heroContent) console.error('Element .hero-content not found.');
-    if (!footerContent) console.error('Element .footer-content not found.');
+    if (!footerContent) console.error('Element .site-footer not found.');
     if (!orb) console.error('Element .orb not found.');
   }
 });
