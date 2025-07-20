@@ -1,0 +1,92 @@
+.button {
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5rem;
+    font-weight: var(--font-weight-medium);
+    transition: all 0.2s ease;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.button-primary {
+    background-color: var(--brand-secondary);
+    color: var(--brand-primary);
+    border: 1px var(--brand-secondary) solid;
+}
+
+/* Hover effect only for devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+    .button-primary:hover {
+        background-color: var(--brand-primary);
+        color: var(--brand-secondary);
+    }
+}
+
+/* Active state for touch devices */
+.button-primary:active {
+    filter: brightness(0.95);
+}
+
+.button-primary-sm {
+    background-color: var(--brand-secondary);
+    color: var(--brand-primary);
+    border: 1px var(--brand-secondary) solid;
+    font-size: 0.9rem;
+}
+
+/* Hover effect only for devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+    .button-primary-sm:hover {
+        background-color: var(--brand-primary);
+        color: var(--brand-secondary);
+    }
+}
+
+/* Active state for touch devices */
+.button-primary-sm:active {
+    filter: brightness(0.95);
+}
+
+.button-outline {
+    border: 2px solid var(--brand-secondary);
+    color: var(--brand-secondary);
+}
+
+.button-outline:hover {
+    background-color: var(--brand-secondary);
+    color: var(--brand-primary);
+}
+
+.section-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: var(--font-weight-bold);
+    color: var(--brand-dark);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--dark-accent);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-style {
+    /* text-decoration: underline; */
+    font-weight: 500;
+    /* transition: all 0.1s ease; */
+    &:hover {
+        /* text-decoration: none; */
+        opacity: .5;
+    }
+}
