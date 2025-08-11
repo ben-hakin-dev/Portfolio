@@ -3,7 +3,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 0;
     border-radius: 5rem;
     font-weight: var(--font-weight-medium);
     transition: all 0.2s ease;
@@ -20,9 +20,8 @@
 
 /* Hover effect only for devices that support hover */
 @media (hover: hover) and (pointer: fine) {
-    .button-primary:hover {
-        background-color: var(--brand-primary);
-        color: var(--brand-secondary);
+    .button:hover {
+        color: var(--brand-accent);
     }
 }
 
@@ -32,18 +31,10 @@
 }
 
 .button-primary-sm {
-    background-color: var(--brand-secondary);
-    color: var(--brand-primary);
-    border: 1px var(--brand-secondary) solid;
-    font-size: 0.9rem;
-}
-
-/* Hover effect only for devices that support hover */
-@media (hover: hover) and (pointer: fine) {
-    .button-primary-sm:hover {
-        background-color: var(--brand-primary);
-        color: var(--brand-secondary);
-    }
+    font-weight: 500;
+    color: var(--brand-secondary);
+    letter-spacing: -0.5px;
+    font-size: 1rem;
 }
 
 /* Active state for touch devices */
@@ -82,11 +73,9 @@
 }
 
 .link-style {
-    /* text-decoration: underline; */
-    font-weight: 500;
-    /* transition: all 0.1s ease; */
+    text-decoration: underline;
     &:hover {
-        /* text-decoration: none; */
+        cursor: pointer;
         opacity: .5;
     }
 }
