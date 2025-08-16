@@ -74,8 +74,9 @@
 
 .link-style {
     text-decoration: underline;
+    transition: color 0.2s ease;
     &:hover {
         cursor: pointer;
-        opacity: .5;
+        color: var(--brand-accent);
     }
 }
