@@ -15,10 +15,11 @@ html {
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
-    line-height: var(--line-height-normal);
+    line-height: 100%;
     font-family: var(--font-family-sans);
     font-display: swap;
     font-size: var(--font-size-base);
+    font-optical-sizing: auto;
     color: var(--brand-secondary);
     background-color: var(--brand-primary);
 }
@@ -54,7 +55,7 @@ select {
     html:focus-within {
         scroll-behavior: auto;
     }
-    
+
     *,
     *::before,
     *::after {
@@ -78,9 +79,4 @@ body {
 :focus-visible {
     outline: 2px solid var(--brand-secondary);
     outline-offset: 2px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    line-height: var(--line-height-tight);
-    font-weight: var(--font-weight-bold);
 }

@@ -1,7 +1,7 @@
 .hero-section {
     display: flex;
     align-items: flex-start;
-    height: auto;
+    height: 80vh;
     color: var(--brand-secondary);
     padding: 2rem 0;
     position: relative;
@@ -15,10 +15,9 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         gap: 24px;
-
         @media only screen and (min-width: 1024px) {
             gap: 40px;
         }
@@ -26,12 +25,9 @@
         .hero-content {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            gap: 1.5rem;
-
-            @media only screen and (min-width: 1024px) {
-                align-items: flex-start;
-                gap: 1rem;
+            align-items: center;
+            gap: 1rem;
+            @media only screen and (min-width: 768px) {
             }
 
             .hero-heading-wrap {
@@ -40,48 +36,66 @@
                 align-items: center;
                 gap: 8px;
                 .brand-logo {
-                    width: 24px;
-                    @media only screen and (min-width: 1024px) {
-                    }
-                }
-                h1 {
-                    font-family: var(--font-family-sans);
-                    font-weight: 500;
-                    font-size: 1.2rem;
-                    letter-spacing: -1px;
-                    color: var(--brand-accent);
-                    br {
-                        @media only screen and (min-width: 768px) {
-                            /*display: none;*/
-                        }
+                    width: 40px;
+                    margin-bottom: 16px;
+                    @media only screen and (min-width: 768px) {
+                        width: 50px;
                     }
                 }
             }
-            .name-title {
+            .main-title {
                 font-family: var(--font-family-serif);
                 font-weight: 400;
-                font-size: 3rem;
-                letter-spacing: -2.5px;
-                line-height: 110%;
-                & .bold-style {
-                    font-weight: 500;
+                font-size: 2.5rem;
+                letter-spacing: -1.5px;
+                line-height: 105%;
+                text-align: center;
+                @media only screen and (min-width: 608px) {
+                    font-size: 2.5rem;
+                    letter-spacing: -2px;
+                }
+                @media only screen and (min-width: 768px) {
+                    font-size: 3.5rem;
+                    letter-spacing: -2.5px;
+                    line-height: 110%;
                 }
             }
             .hero-subheading {
-                font-size: 1rem;
+                font-size: 0.8rem;
                 font-weight: 400;
                 color: var(--brand-secondary);
-                text-align: left;
-                letter-spacing: -0.5px;
-                line-height: 140%;
+                text-align: center;
+                letter-spacing: -0.3px;
+                line-height: 150%;
 
-                @media only screen and (min-width: 1024px) {
-                    width: 70%;
-                    font-size: 1rem;
+                @media only screen and (min-width: 768px) {
+                    width: 90%;
+                    font-size: 1.1rem;
                 }
 
                 @media only screen and (min-width: 1280px) {
-                    width: 60%;
+                    width: 70%;
+                }
+            }
+            .hero-contact-links {
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+                font-family: var(--font-family-sans);
+                font-weight: 500;
+                letter-spacing: -0.5px;
+                @media only screen and (min-width: 768px) {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 32px;
+                    font-size: 1.1rem;
+                }
+                a {
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        color: var(--brand-accent);
+                    }
                 }
             }
         }
@@ -147,9 +161,10 @@
             gap: 1rem;
 
             .project-title {
-                font-size: 2rem;
-                font-weight: 400;
-                letter-spacing: -2px;
+                font-size: 1.5rem;
+                font-family: var(--font-family-sans);
+                font-weight: 500;
+                letter-spacing: -0.7px;
                 color: var(--brand-secondary);
             }
 
@@ -225,66 +240,29 @@
 
 .mini-bio-section {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
     flex-direction: column;
-    height: 70vh;
-    position: relative;
-    padding-bottom: 80px;
-    gap: 1rem;
+
     text-align: center;
-    @media only screen and (min-width: 1024px) {
-        height: 40vh;
-    }
     h2 {
-        font-size: 50px;
+        font-size: 1.5rem;
         font-weight: 400;
-        letter-spacing: -1.5px;
+        letter-spacing: -1px;
         color: var(--brand-secondary);
-        text-align: left;
-        font-family: var(--font-family-serif);
-        @media only screen and (min-width: 1024px) {
-            font-size: 3rem;
-            letter-spacing: -2.5px;
-        }
-    }
-
-    p {
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: -0.5px;
-        color: var(--brand-secondary);
-        z-index: 1;
-        text-align: left;
-        max-width: 600px;
-        line-height: 140%;
-
-        @media only screen and (min-width: 1024px) {
-            font-size: 1.1rem;
-            letter-spacing: -0.5px;
-            line-height: 140%;
-
-            max-width: 700px;
-        }
-    }
-
-    .learn-more-link {
-        font-size: 1rem;
-        font-weight: 500;
-        letter-spacing: -0.5px;
-        color: var(--brand-secondary);
-        text-decoration: underline;
-        transition: opacity 0.3s ease;
-
-        &:hover {
-            opacity: 0.7;
+        text-align: center;
+        font-family: var(--font-family-sans);
+        line-height: 120%;
+        @media only screen and (min-width: 768px) {
+            font-size: 1.5rem;
+            letter-spacing: -1px;
         }
     }
 }
 
 .site-footer {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     height: auto;
     padding: 0 1.5rem 35px 1.5rem;
@@ -293,8 +271,8 @@
         width: 100%;
         height: auto;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         gap: 0;
 
         @media only screen and (min-width: 1024px) {
@@ -302,32 +280,40 @@
 
         .logo-plus-copyright {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
-            gap: 0.7rem;
+            gap: 1rem;
             @media only screen and (min-width: 1024px) {
             }
             .footer-brand-logo {
-                width: 35px;
+                width: 30px;
                 height: auto;
-                @media only screen and (min-width: 1024px) {
-                    width: 45px;
-                }
             }
 
             .copyright-info {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
-                gap: 4px;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
                 @media only screen and (min-width: 1024px) {
+                }
+                .copyright-social-links {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+                .copyright-tagline {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 8px;
                 }
                 .button {
                     padding: 0;
                 }
                 .copyright-text {
-                    font-size: 0.875rem;
+                    font-size: 0.8rem;
                     font-weight: 400;
                     letter-spacing: -0.5px;
                     color: var(--brand-secondary);
@@ -337,7 +323,10 @@
         }
     }
 }
-
+.bold-style {
+    font-weight: 500;
+    font-family: var(--font-family-sans);
+}
 .section-title {
     font-size: 1.2rem;
     font-family: var(--font-family-sans);
@@ -368,7 +357,10 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.1s ease-in-out;
-
+    @media only screen and (min-width: 600px) {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
     .button {
         display: none;
 
@@ -395,17 +387,24 @@
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
-
+    width: 100%;
+    justify-content: space-between;
+    @media only screen and (min-width: 768px) {
+        justify-content: flex-start;
+    }
     .nav-logo {
         height: auto;
-        width: 20px;
+        width: 24px;
+        @media only screen and (min-width: 768px) {
+        }
     }
 
     .nav-logo-text {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 500;
-        letter-spacing: -0.8px;
+        letter-spacing: -0.5px;
         color: var(--brand-secondary);
+        margin-top: 1.5px;
     }
 }
 
@@ -600,4 +599,8 @@
 .site-footer-about {
     background-color: transparent;
     z-index: 10;
+}
+
+.word-highlight {
+    font-weight: 600;
 }
