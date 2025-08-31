@@ -1,3 +1,64 @@
+/* Neue Montreal */
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/fonts/neue-montreal/NeueMontreal-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/fonts/neue-montreal/NeueMontreal-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/fonts/neue-montreal/NeueMontreal-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/fonts/neue-montreal/NeueMontreal-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Neue Montreal (italics) */
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/fonts/neue-montreal/NeueMontreal-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/fonts/neue-montreal/NeueMontreal-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/fonts/neue-montreal/NeueMontreal-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/fonts/neue-montreal/NeueMontreal-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Season Mix */
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-LightItalic.otf")
@@ -6,7 +67,6 @@
     font-style: italic;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-Regular.otf") format("opentype");
@@ -14,7 +74,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-RegularItalic.otf")
@@ -23,7 +82,6 @@
     font-style: italic;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-Medium.otf") format("opentype");
@@ -31,7 +89,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-MediumItalic.otf")
@@ -40,7 +97,6 @@
     font-style: italic;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-SemiBold.otf") format("opentype");
@@ -48,7 +104,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-SemiBoldItalic.otf")
@@ -57,7 +112,6 @@
     font-style: italic;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-Bold.otf") format("opentype");
@@ -65,7 +119,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-BoldItalic.otf") format("opentype");
@@ -73,7 +126,6 @@
     font-style: italic;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-Heavy.otf") format("opentype");
@@ -81,7 +133,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: "SeasonMix";
     src: url("/fonts/DP_season-mix/SeasonMix-HeavyItalic.otf")
@@ -91,71 +142,8 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: "Geist";
-    src: url("/fonts/Geist/Geist-Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Geist";
-    src: url("/fonts/Geist/Geist-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
 .seasonmix {
     font-family: var(--font-family-serif);
     font-weight: 400;
     font-style: italic;
 }
-
-/*@font-face {
-    font-family: "SuisseIntl";
-    src: url("/fonts/SuisseIntl-Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "SuisseIntl";
-    src: url("/fonts/SuisseIntl-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "SuisseIntl";
-    src: url("/fonts/Suisse Int'l Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "SuisseIntl";
-    src: url("/fonts/SuisseIntl-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "SuisseIntl";
-    src: url("/fonts/SuisseIntl-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "SeasonMix";
-    src: url("/fonts/DP_season-mix/SeasonMix-Light.otf") format("opentype");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}*/
