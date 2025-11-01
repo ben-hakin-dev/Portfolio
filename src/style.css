@@ -675,4 +675,5 @@
 .word-highlight-link:hover {
     /*text-decoration: underline;*/
     color: var(--brand-accent);
+    cursor: pointer;
 }
